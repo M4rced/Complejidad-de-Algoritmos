@@ -1,0 +1,9 @@
+t = int(input())
+for i in (range (t)):
+    numero = int(input()) 
+    resultado = ""
+    for i  in reversed(range(1,10)):
+        if (numero>=i):
+            numero= numero - i 
+            resultado = str(i) + resultado
+    print(resultado)

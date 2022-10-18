@@ -1,0 +1,20 @@
+#from unicodedata import decimal
+#cantidadNumeros = int(input("Digite la cantidad de numeros a ingresar: "))
+i=0
+while True: #i in range(cantidadNumeros):
+    numeroIngresado = input() #("Digite un numero: ") 
+    i += 1
+    if (numeroIngresado[0] == '-'): #Aqui determina si es negativo
+        #i = cantidadNumeros + 1 # Con esto se sale y no convierte ningun numero
+        #print("EL numero ingresado es contiene un - por lo tanto no podra ingresar mas numeros")
+        print()
+        break
+    else:
+        try:  
+            if (numeroIngresado[0] == '0' and numeroIngresado[1] == 'x'): # Aqui es hexadecimal
+                print(int(numeroIngresado,16))
+            else: # Aqui es decimal
+               print( hex(int(numeroIngresado)))
+        except:
+            print(hex(int(numeroIngresado)))
+            

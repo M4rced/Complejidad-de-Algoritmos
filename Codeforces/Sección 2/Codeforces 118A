@@ -1,0 +1,14 @@
+vocales = "aoeuiyY" 
+palabra = input().lower()
+palabraResultante = ""
+for letra in palabra:
+    if letra not in vocales:
+        palabraResultante += "." + letra
+print(palabraResultante)
+
+"""Opcion 2
+vocales = "AOYEUIaoyeui"
+palabra = input()
+for letra in vocales:
+    palabra = palabra.replace(letra,'.'"")
+print(palabra)""""

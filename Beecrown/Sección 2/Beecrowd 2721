@@ -1,0 +1,23 @@
+renos= ['Dasher', 'Dancer', 'Prancer', 'Vixen', 'Comet', 'Cupid', 'Donner', 'Blitzen', 'Rudolph']
+entry = map(int, input().split())
+snowball = 0
+
+for num in entry:
+    snowball += int(num)
+
+i = 0
+for i2 in range(snowball):
+    if i == 8:
+        i = 0
+    else:
+        i += 1
+print(renos[i-1])
+def validar(codigo):
+    if len(codigo) <= 13 and len(codigo) > 1:
+        codigoVerificado =codigo.zfill(13)
+        return codigoVerificado
+    else:
+        return False
+
+codigoVerificado = validar(codigo)
+#validarRespuesta(codigoVerificado
